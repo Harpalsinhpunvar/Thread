@@ -1,0 +1,12 @@
+package com.company;
+
+public class Runnble implements Runnable{
+    public void run() {
+        System.out.println("Hello, I am in thread");
+    }
+        public static void main(String[] args){
+        Runnble obj = new Runnble();
+        Thread l = new Thread(obj);
+        l.start();
+    }
+}
