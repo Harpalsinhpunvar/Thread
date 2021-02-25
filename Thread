@@ -1,0 +1,13 @@
+package com.company;
+
+public class ThreadPr extends Thread{
+    public static void main (String [] args) {
+        ThreadPr l = new ThreadPr();
+        l.run();
+//        l.start();
+//        System.out.println("This code is outside of the thread");
+    }
+    public void run() {
+        System.out.println("This code is running in a thread");
+    }
+}
